@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="EmployeeViewController" customModule="Employee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WRo-v2-9mK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="678"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcO-y1-sMB">
+                                <rect key="frame" x="26" y="745" width="341" height="47"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="GWh-0Y-sZp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add Employee"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vcO-y1-sMB" secondAttribute="trailing" constant="26" id="51K-aw-Oou"/>
+                            <constraint firstItem="vcO-y1-sMB" firstAttribute="top" secondItem="WRo-v2-9mK" secondAttribute="bottom" constant="8" id="5ra-Si-7Lo"/>
+                            <constraint firstItem="WRo-v2-9mK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="AvH-Mo-aqR"/>
+                            <constraint firstItem="vcO-y1-sMB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="G6v-51-33w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WRo-v2-9mK" secondAttribute="trailing" id="aV3-SJ-as0"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vcO-y1-sMB" secondAttribute="bottom" constant="26" id="td2-Nq-D3T"/>
+                            <constraint firstItem="WRo-v2-9mK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wDx-1r-XXp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addEmployeeButton" destination="vcO-y1-sMB" id="6eR-NN-FOi"/>
+                        <outlet property="tableView" destination="WRo-v2-9mK" id="cgX-1Z-hgP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6.8702290076335872" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
